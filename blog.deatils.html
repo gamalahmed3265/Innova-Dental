@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Dentist | Cosmetic, Implant & Family Dentistry | LA Dental Clinic</title>
+    <meta name="description"
+        content="Los Angeles Cosmetic Dentist - Expert Dentist! 35 Years of Experience. LA Dental provides the highest quality dental care in a State of the Art Office.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="bg-[#f5f5f5] font-cairo">
+    <!-- start header -->
+    <header class="sticky bg-white z-50 left-0 top-0 w-full shadow">
+        <nav class="container px-6">
+            <div class="flex items-center justify-between text-white">
+                <a href="">
+                    <img src=" ./assets/clear-logo-2.png" class=" h-20" alt="">
+                </a>
+
+                <div class="flex flex-col text-[#3e3c3f] bold md:flex-row items-center gap-4">
+                    <div class="flex items-center justify-between gap-4">
+                        <a href="https://ladentalclinic.com/emergency/">Emergency Info</a>
+
+                        <a href="tel:213-385-9710">
+                            <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-phone-square"></i> </span>
+                            <span class="elementor-icon-list-text">
+                                213.385.9710</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between gap-4">
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://mychart.myoryx.com/patient/#/auth/onlineschedule?realm=ladental&amp;univers=com"
+                            target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book An Appointment</span>
+                            </span>
+                        </a>
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://calendly.com/ladental" target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book A Virtual Consultation</span>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <button id="mobile-menu-button"
+                    class="flex items-center md:hidden px-3 py-2 border rounded text-gray-900">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <ul id="mobile-menu" class="hidden md:flex text-[#3e3c3f]  uppercase text-xs justify-center items-center">
+                <!-- {/* Dentistry */} -->
+                <li class="relative">
+                    <a href="/dentistry.html"
+                        class="flex items-center px-4 py-3 hover:bg-[#3e3c3f] hover:text-white transition-all duration-700 ">
+                        <span class="font-medium">Dentistry</span>
+                    </a>
+                </li>
+
+                <!-- {/* Invisalign */} -->
+                <li class=" relative">
+                    <a href="/invisalign.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Invisalign</span>
+                    </a>
+                </li>
+
+                <!-- {/* Dental Implants */} -->
+                <li class=" relative">
+                    <a href="dental-implants.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Dental Implants</span>
+                    </a>
+                </li>
+
+                <!-- {/* Veneers */} -->
+                <li class=" relative">
+                    <a href="veneers.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Veneers</span>
+                    </a>
+                </li>
+
+                <!-- {/* Wisdom Teeth (with dropdown) */} -->
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <a href="wisdom-tooth.html" class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">Wisdom Teeth</span>
+
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </a>
+                    <ul
+                        class="absolute left-0 text-[#3e3c3f] mt-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        <li>
+                            <a href="/book-wisdom-tooth-woes" class="block px-4 py-2 hover:bg-gray-100">
+                                Books
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- {/* Smile Sisters Podcast */} -->
+                <!-- <li class=" relative">
+                    <a href="/smile-sisters-podcast"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Smile Sisters Podcast</span>
+                    </a>
+                </li> -->
+
+                <!-- {/* About Us (with dropdown) */} -->
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <div class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">About Us</span>
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </div>
+                    <ul
+                        class="absolute left-0 mt-0 w-48 text-[#3e3c3f] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        <li>
+                            <a href="/about-staff.html" class="block px-4 py-2 hover:bg-gray-100">
+                                Staff
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/reviews" class="block px-4 py-2 hover:bg-gray-100">
+                                Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="block px-4 py-2 hover:bg-gray-100">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class=" relative">
+                    <a href="blogs.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">blogs</span>
+                    </a>
+                </li>
+                <!-- {/* FYI (with mega dropdown) */} -->
+                <!-- <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <div class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">FYI</span>
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </div>
+                    <div
+                        class="absolute right-0 mt-0 w-96 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-100 p-4 grid grid-cols-2 gap-4">
+                        <div>
+                            <a href="/new-patients-info" class="block px-4 py-2 hover:bg-gray-100">
+                                New Patients
+                            </a>
+                            <a href="https://mychart.myoryx.com/patient/#/home?realm=ladental"
+                                class="block px-4 py-2 hover:bg-gray-100">
+                                Assess Your Oral Health
+                            </a>
+                            <a href="https://mychart.myoryx.com/patient/#/home?realm=ladental"
+                                class="block px-4 py-2 hover:bg-gray-100">
+                                Patient Forms
+                            </a>
+                            <a href="/dental-insurance" class="block px-4 py-2 hover:bg-gray-100">
+                                Insurance
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/blog" class="block px-4 py-2 hover:bg-gray-100">
+                                Blog
+                            </a>
+                            <a href="/covid-19-update" class="block px-4 py-2 hover:bg-gray-100">
+                                COVID-19
+                            </a>
+
+                            <div class="group/sub relative">
+                                <div class="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                    <span class="mr-1">Common Dental Problems</span>
+                                    <i class="fa-solid fa-caret-up h-4 w-4"></i>
+                                </div>
+                                <ul
+                                    class="absolute right-full top-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible ml-1">
+                                    <li>
+                                        <a href="/common-dental-problems/missing-teeth"
+                                            class="block px-4 py-2 hover:bg-gray-100">
+                                            Missing Teeth
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/common-dental-problems/broken-teeth"
+                                            class="block px-4 py-2 hover:bg-gray-100">
+                                            Broken Teeth
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- blogs -->
+    <section class="container mx-auto px-4 md:px-8 lg:px-16 xl:px-32 min-h-screen my-10">
+        <div><span class="uppercase text-accent font-semibold leading-4">المقالات</span>
+            <h2 class="text-primary font-bold text-4xl italic">المقالات</h2>
+        </div>
+        <div class="flex flex-wrap my-10">
+            <div class="w-full lg:w-2/3 my-10 md:w-1/2 p-4">
+                <img class="rounded" src="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png"
+                    srcset="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png 1x, https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_1280.png 2x"
+                    alt="Free Ai Generated Employee illustration and picture"
+                    title="Download free HD stock image of Ai Generated Employee">
+                <div class="">
+                    <h1 class="text-3xl font-bold my-4">الرحاب</h1>
+                    <p class="text-gray-600">4/9/2025, 7:55:18 PM</p>
+                    <p class="text-gray my-4">
+                        شركة
+                        الرحاب لتوريد العمالة تُعد من الشركات الرائدة في مجال تقديم خدمات الحراسة والأمن، حيث توفر
+                        فريقًا متخصصًا من البودي جاردات والحراسات الخاصة لتأمين الأفراد، العائلات، المجموعات
+                        السياحية،
+                        ورجال الأعمال على أعلى مستوى من الاحترافية والكفاءة. تتميز الشركة بانتقاء أفراد أمن مدربين
+                        على
+                        أعلى مستوى من اللياقة واليقظة، ويتمتعون بخبرة واسعة في التعامل مع مختلف المواقف الأمنية.
+
+                        سواء كنت بحاجة إلى حراسة شخصية خلال تنقلك، أو تأمين عائلتك في المناسبات والرحلات، أو حماية
+                        مجموعة سياحية أثناء زيارتها لمناطق مختلفة، فإن "الرحاب لتوريد العمالة" تضمن لك راحة البال
+                        والحماية الكاملة. كما تقدم الشركة خدماتها لرجال الأعمال الذين يحتاجون إلى حماية أثناء
+                        الاجتماعات
+                        أو التنقلات داخل وخارج البلاد.
+
+                        يتم تخصيص خطط تأمين حسب احتياجات كل عميل، مع مراعاة أقصى درجات السرية والدقة. فريق "الرحاب"
+                        مدرب
+                        على استخدام أحدث وسائل الاتصال والتنسيق الأمني، لضمان تنفيذ المهام بسلاسة وكفاءة عالية.
+
+                        للاستفسار والحجز، يُرجى الاتصال على الرقم: 01104891929.
+                        الرحاب لتوريد العمالة… الأمان الذي تستحقه.</p>
+                    <!-- <button id="toggleBtn" class="mt-2 text-primary hover:text-blue-800 text-sm font-medium">
+                            إقرأ المزيد
+                        </button> -->
+                </div>
+                <img class="rounded" src="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png"
+                    srcset="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png 1x, https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_1280.png 2x"
+                    alt="Free Ai Generated Employee illustration and picture"
+                    title="Download free HD stock image of Ai Generated Employee">
+                <p class="text-gray my-10">
+                    شركة
+                    الرحاب لتوريد العمالة تُعد من الشركات الرائدة في مجال تقديم خدمات الحراسة والأمن، حيث توفر
+                    فريقًا متخصصًا من البودي جاردات والحراسات الخاصة لتأمين الأفراد، العائلات، المجموعات
+                    السياحية،
+                    ورجال الأعمال على أعلى مستوى من الاحترافية والكفاءة. تتميز الشركة بانتقاء أفراد أمن مدربين
+                    على
+                    أعلى مستوى من اللياقة واليقظة، ويتمتعون بخبرة واسعة في التعامل مع مختلف المواقف الأمنية.
+
+                    سواء كنت بحاجة إلى حراسة شخصية خلال تنقلك، أو تأمين عائلتك في المناسبات والرحلات، أو حماية
+                    مجموعة سياحية أثناء زيارتها لمناطق مختلفة، فإن "الرحاب لتوريد العمالة" تضمن لك راحة البال
+                    والحماية الكاملة. كما تقدم الشركة خدماتها لرجال الأعمال الذين يحتاجون إلى حماية أثناء
+                    الاجتماعات
+                    أو التنقلات داخل وخارج البلاد.
+
+                    يتم تخصيص خطط تأمين حسب احتياجات كل عميل، مع مراعاة أقصى درجات السرية والدقة. فريق "الرحاب"
+                    مدرب
+                    على استخدام أحدث وسائل الاتصال والتنسيق الأمني، لضمان تنفيذ المهام بسلاسة وكفاءة عالية.
+
+                    للاستفسار والحجز، يُرجى الاتصال على الرقم: 01104891929.
+                    الرحاب لتوريد العمالة… الأمان الذي تستحقه.</p>
+
+            </div>
+            <div class="w-full flex flex-col gap-4 lg:w-1/3 md:w-1/2 p-4">
+                <div class="rounded shadow hover:shadow-lg p-4 transition-all duration-500">
+                    <a class="" href="/blog.deatils.html">
+                        <img class="rounded"
+                            src="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png"
+                            srcset="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png 1x, https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_1280.png 2x"
+                            alt="Free Ai Generated Employee illustration and picture"
+                            title="Download free HD stock image of Ai Generated Employee">
+                        <h2 class="text-xl mt-4 font-bold text-gray-800 mb-2 line-clamp-2">الرحاب
+
+                        </h2>
+
+                        <p class="text-gray-600 text-ellipsis overflow-hidden whitespace-nowrap max-w-full ">
+                            الرحاب لتوريد العمالة توفر بودى جارد، وحراسات خاصة للافراد والاسر والمجموعات السياحية ورجال
+                            الاعمال -- 01104891929"
+                        </p>
+                        <span class="text-gray-600 text-sm">4/9/2025, 7:55:18 PM</span>
+
+                    </a>
+                </div>
+                <div class="rounded shadow hover:shadow-lg p-4 transition-all duration-500">
+                    <a class="" href="/blog.deatils.html">
+                        <img class="rounded"
+                            src="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png"
+                            srcset="https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_640.png 1x, https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_1280.png 2x"
+                            alt="Free Ai Generated Employee illustration and picture"
+                            title="Download free HD stock image of Ai Generated Employee">
+                        <h2 class="text-xl mt-4 font-bold text-gray-800 mb-2 line-clamp-2">الرحاب
+
+                        </h2>
+
+                        <p class="text-gray-600 text-ellipsis overflow-hidden whitespace-nowrap max-w-full ">
+                            الرحاب لتوريد العمالة توفر بودى جارد، وحراسات خاصة للافراد والاسر والمجموعات السياحية ورجال
+                            الاعمال -- 01104891929"
+                        </p>
+                        <span class="text-gray-600 text-sm">4/9/2025, 7:55:18 PM</span>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blogs -->
+    <section class="bg-gray-50 py-12 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col md:flex-row gap-8">
+            <!-- Address Column -->
+            <div class="w-full md:w-1/2">
+                <div class="prose">
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                    <div class="w-full md:w-1/2">
+                        <div class="prose">
+                            <p><strong>LA Dental Clinic</strong></p>
+                            <p>3377 Wilshire Blvd #202</p>
+                            <p>Los Angeles, CA, 90010</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <a href="tel:213-385-9710" class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-phone mr-2 w-4 text-center"></i>
+                                    <span>213.385.9710</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="mailto:smile@ladentalclinic.com"
+                                    class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-envelope mr-2 w-4 text-center"></i>
+                                    <span>smile@ladentalclinic.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social & Payment Column -->
+            <div class="w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2">
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/LosAngelesDental" target="_blank"
+                                class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-blue-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCDp-9fJL4vjh6a1bIyQ9Cqw" target="_blank"
+                                class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-700">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/la_dental/" target="_blank"
+                                class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <form name="PrePage" method="post"
+                            action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                            <input type="hidden" name="LinkId" value="dcf1a658-065f-48ba-a25a-d65eef2040d2">
+                            <button type="submit"
+                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                Make A Payment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white w-full">
+
+        <!-- Footer Bottom -->
+        <section class="border-t border-gray-200 py-8 px-4 md:px-0">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-sm text-gray-600 mb-4 md:mb-0">
+                        © 2025 LA Dental Clinic. All Rights Reserved
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="/privacy-policy/" class="text-blue-600 hover:underline text-sm">Privacy Policy</a>
+                        <a href="https://www.elementiq.com/" target="_blank" rel="nofollow"
+                            class="text-blue-600 hover:underline text-sm">
+                            Internet Marketing by ElementIQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="./assets/scripts/tailwind.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/swiper.js"></script>
+</body>
+
+</html>

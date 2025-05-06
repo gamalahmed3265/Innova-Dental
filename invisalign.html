@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Dentist | Cosmetic, Implant & Family Dentistry | LA Dental Clinic</title>
+    <meta name="description"
+        content="Los Angeles Cosmetic Dentist - Expert Dentist! 35 Years of Experience. LA Dental provides the highest quality dental care in a State of the Art Office.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Optional custom styles for Swiper navigation and pagination */
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #3b82f6;
+            /* Tailwind blue-500 */
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #3b82f6;
+            /* Tailwind blue-500 */
+        }
+
+        /* Styles for the image modal */
+        .image-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-modal img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .image-modal .close-button {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f5f5f5] font-cairo">
+    <!-- start header -->
+    <header class="sticky bg-white z-50 left-0 top-0 w-full shadow">
+        <nav class="container px-6">
+            <div class="flex items-center justify-between text-white">
+                <a href="">
+                    <img src=" ./assets/clear-logo-2.png" class=" h-20" alt="">
+                </a>
+
+                <div class="flex flex-col text-[#3e3c3f] bold md:flex-row items-center gap-4">
+                    <div class="flex items-center justify-between gap-4">
+                        <a href="https://ladentalclinic.com/emergency/">Emergency Info</a>
+
+                        <a href="tel:213-385-9710">
+                            <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-phone-square"></i> </span>
+                            <span class="elementor-icon-list-text">
+                                213.385.9710</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between gap-4">
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://mychart.myoryx.com/patient/#/auth/onlineschedule?realm=ladental&amp;univers=com"
+                            target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book An Appointment</span>
+                            </span>
+                        </a>
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://calendly.com/ladental" target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book A Virtual Consultation</span>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <button id="mobile-menu-button"
+                    class="flex items-center md:hidden px-3 py-2 border rounded text-gray-900">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <ul id="mobile-menu" class="hidden md:flex text-[#3e3c3f]  uppercase text-xs justify-center items-center">
+                <!-- {/* Dentistry */} -->
+                <li class="relative">
+                    <a href="/dentistry.html"
+                        class="flex items-center px-4 py-3 hover:bg-[#3e3c3f] hover:text-white transition-all duration-700 ">
+                        <span class="font-medium">Dentistry</span>
+                    </a>
+                </li>
+
+                <!-- {/* Invisalign */} -->
+                <li class=" relative">
+                    <a href="/invisalign.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Invisalign</span>
+                    </a>
+                </li>
+
+                <!-- {/* Dental Implants */} -->
+                <li class=" relative">
+                    <a href="dental-implants.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Dental Implants</span>
+                    </a>
+                </li>
+
+                <!-- {/* Veneers */} -->
+                <li class=" relative">
+                    <a href="veneers.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Veneers</span>
+                    </a>
+                </li>
+
+                <!-- {/* Wisdom Teeth (with dropdown) */} -->
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <a href="wisdom-tooth.html" class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">Wisdom Teeth</span>
+
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </a>
+                    <ul
+                        class="absolute left-0 text-[#3e3c3f] mt-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        <li>
+                            <a href="/book-wisdom-tooth-woes" class="block px-4 py-2 hover:bg-gray-100">
+                                Books
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- {/* Smile Sisters Podcast */} -->
+                <!-- <li class=" relative">
+                <a href="/smile-sisters-podcast"
+                    class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <span class="font-medium">Smile Sisters Podcast</span>
+                </a>
+            </li> -->
+
+                <!-- {/* About Us (with dropdown) */} -->
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <div class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">About Us</span>
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </div>
+                    <ul
+                        class="absolute left-0 mt-0 w-48 text-[#3e3c3f] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        <li>
+                            <a href="/about-staff.html" class="block px-4 py-2 hover:bg-gray-100">
+                                Staff
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/reviews" class="block px-4 py-2 hover:bg-gray-100">
+                                Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="block px-4 py-2 hover:bg-gray-100">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class=" relative">
+                    <a href="blogs.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">blogs</span>
+                    </a>
+                </li>
+                <!-- {/* FYI (with mega dropdown) */} -->
+                <!-- <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                <div class="flex items-center px-4 py-3 cursor-pointer">
+                    <span class="font-medium mr-1">FYI</span>
+                    <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                </div>
+                <div
+                    class="absolute right-0 mt-0 w-96 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-100 p-4 grid grid-cols-2 gap-4">
+                    <div>
+                        <a href="/new-patients-info" class="block px-4 py-2 hover:bg-gray-100">
+                            New Patients
+                        </a>
+                        <a href="https://mychart.myoryx.com/patient/#/home?realm=ladental"
+                            class="block px-4 py-2 hover:bg-gray-100">
+                            Assess Your Oral Health
+                        </a>
+                        <a href="https://mychart.myoryx.com/patient/#/home?realm=ladental"
+                            class="block px-4 py-2 hover:bg-gray-100">
+                            Patient Forms
+                        </a>
+                        <a href="/dental-insurance" class="block px-4 py-2 hover:bg-gray-100">
+                            Insurance
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/blog" class="block px-4 py-2 hover:bg-gray-100">
+                            Blog
+                        </a>
+                        <a href="/covid-19-update" class="block px-4 py-2 hover:bg-gray-100">
+                            COVID-19
+                        </a>
+
+                        <div class="group/sub relative">
+                            <div class="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <span class="mr-1">Common Dental Problems</span>
+                                <i class="fa-solid fa-caret-up h-4 w-4"></i>
+                            </div>
+                            <ul
+                                class="absolute right-full top-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible ml-1">
+                                <li>
+                                    <a href="/common-dental-problems/missing-teeth"
+                                        class="block px-4 py-2 hover:bg-gray-100">
+                                        Missing Teeth
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/common-dental-problems/broken-teeth"
+                                        class="block px-4 py-2 hover:bg-gray-100">
+                                        Broken Teeth
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- end header -->
+    <section class="">
+        <div class="mx-auto">
+            <!-- Grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <!-- Left image column -->
+                <div class="col-span-1">
+                    <picture>
+                        <source
+                            srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/smiling-patient-gallery-412x681_x1.5.avif"
+                            type="image/avif">
+                        <source
+                            srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/smiling-patient-gallery-412x681_x1.5.webp"
+                            type="image/webp">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/smiling-patient-gallery-412x681_x1.5.png"
+                            class="w-full h-auto object-cover" alt="Smiling patient" loading="lazy">
+                    </picture>
+                </div>
+
+                <!-- Middle content column -->
+                <div class="col-span-1 p-6 flex flex-col justify-center">
+                    <div class="space-y-6">
+                        <p class="text-lg font-medium text-gray-700">Unmatched Quality.</p>
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">Invisalign in LA</h2>
+                        <p class="text-gray-600 md:text-lg">
+                            Book your FREE virtual consultation and receive your coupon<br>
+                            Hurry! Your coupon is good for two weeks
+                        </p>
+
+                        <!-- Calendly Widget (desktop only) -->
+                        <div class="hidden md:block w-full">
+                            <div class="calendly-inline-widget"
+                                data-url="https://calendly.com/ladental/invisalign-virtual-consultation"
+                                style="min-width:320px;height:630px;"></div>
+                        </div>
+
+                        <!-- Book Now Button -->
+                        <button
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ladental/invisalign-virtual-consultation'});return false;"
+                            class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right image column (hidden on mobile) -->
+                <div class="hidden md:block col-span-1">
+                    <picture>
+                        <source
+                            srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/smiling-patient-gallery-2-412x681_x1.5.avif"
+                            type="image/avif">
+                        <source
+                            srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/smiling-patient-gallery-2-412x681_x1.5.webp"
+                            type="image/webp">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/smiling-patient-gallery-2-412x681_x1.5.png"
+                            class="w-full h-auto object-cover" alt="Smiling patient" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container mx-auto px-4">
+            <!-- Grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+                <!-- Left column - Images -->
+                <div class="space-y-6">
+                    <!-- Main image -->
+                    <div class="w-full">
+                        <picture>
+                            <source
+                                srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/azy-arezoo-smiling-looking-at-eachother_x1.5.avif"
+                                type="image/avif">
+                            <source
+                                srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/azy-arezoo-smiling-looking-at-eachother_x1.5.webp"
+                                type="image/webp">
+                            <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/azy-arezoo-smiling-looking-at-eachother_x1.5.jpg"
+                                class="w-full h-auto rounded-lg shadow-md" alt="Smiling patients" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <!-- Logo grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Invisalign Provider Logo -->
+                        <div class="flex items-center justify-center">
+                            <picture>
+                                <source
+                                    srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/logo-invisalign-provider.webp"
+                                    type="image/webp">
+                                <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/logo-invisalign-provider.png"
+                                    class="max-h-20 w-auto" alt="Invisalign Provider" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <!-- Itero Logo -->
+                        <div class="flex items-center justify-center">
+                            <picture>
+                                <source srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/logo-itero.webp"
+                                    type="image/webp">
+                                <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/logo-itero.png"
+                                    class="max-h-20 w-auto" alt="Itero" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <!-- Platinum Tag -->
+                        <div class="flex items-center justify-center">
+                            <picture>
+                                <source
+                                    srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/AdvantageProgIcons_ALL_CMYK_Platinum-tag.avif"
+                                    type="image/avif">
+                                <source
+                                    srcset="https://ladentalclinic.com/wp-content/uploads/2023/02/AdvantageProgIcons_ALL_CMYK_Platinum-tag.webp"
+                                    type="image/webp">
+                                <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/AdvantageProgIcons_ALL_CMYK_Platinum-tag.jpg"
+                                    class="max-h-20 w-auto" alt="Platinum Provider" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column - Content -->
+                <div class="space-y-6">
+                    <h5 class="text-lg font-semibold text-blue-600">What Makes This The Best Deal You Can Find?</h5>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our deal is all inclusive.</h2>
+                    <p class="text-gray-600">
+                        Unlike other offices that advertise a low price to get you in the door, we don't exclude complex
+                        cases or nickel-and-dime you with upcharges. You get <strong class="font-semibold">everything
+                            you need</strong> to correct your smile <strong class="font-semibold">for one unbeatably low
+                            price.</strong>
+                    </p>
+
+                    <h5 class="text-lg font-semibold text-gray-800"><b>Your Treatment Includes</b></h5>
+
+                    <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Aligners
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Trays
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Refinements
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Appointments
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            X-Rays
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Scans
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Photos
+                        </li>
+                    </ul>
+
+                    <h5 class="text-lg font-semibold text-blue-600">
+                        <strong>We are Diamond Invisalign Providers. This means we are in the top 1% of Invisalign
+                            Providers</strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stretched Section -->
+    <section class="">
+        <div class="container mx-auto px-4">
+            <!-- Full width column -->
+            <div class="w-full text-center">
+                <!-- Heading -->
+                <h4 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
+                    Book your FREE virtual or in-person consultation
+                </h4>
+
+                <!-- Button - Visible on desktop/tablet -->
+                <div class="hidden md:block">
+                    <button
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ladental/invisalign-virtual-consultation'});return false;"
+                        class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-8 border border-gray-300 rounded-md shadow-sm transition duration-300">
+                        GET THIS DEAL
+                    </button>
+                </div>
+
+                <!-- Button - Visible on mobile -->
+                <div class="md:hidden">
+                    <a href="#form"
+                        class="inline-block rounded-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-8 border border-gray-300  shadow-sm transition duration-300">
+                        GET THIS DEAL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" py-8">
+        <div class="container mx-auto px-4">
+            <!-- Centered content column -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Phone number text -->
+                <h4 class="text-xl md:text-2xl font-medium text-gray-800 mb-4">
+                    Call us at <a href="tel:213-385-9710"
+                        class="text-blue-600 hover:text-blue-800 transition-colors">213-385-9710</a>
+                </h4>
+
+                <!-- Call button -->
+                <a href="tel:213-385-9710"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition-colors duration-300 shadow-sm">
+                    CALL US TODAY
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section Container -->
+    <section class="">
+        <div class="container mx-auto px-4">
+            <!-- Full-width column -->
+            <div class="w-full text-center">
+                <!-- Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                    Our Invisalign Patients Love Smiling
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-10">
+        <div class="container mx-auto">
+            <div class="swiper image-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
+                            <div class="w-2/3 justify-self-center md:justify-self-start">
+                                <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/10/Gillespie_Cravon_Smile-225x300.jpeg"
+                                    alt="Gillespie_Cravon_Smile"
+                                    class="lazyload rounded-md shadow-md max-w-full h-auto mx-auto md:mx-0 cursor-zoom-in"
+                                    style="max-height: 300px; object-fit: cover;" data-index="0" />
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-xl font-semibold">- Cravon</p>
+                                <div class="mt-4 grid grid-cols-2 gap-4">
+                                    <div>
+                                        <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/10/Gillespie_Cravon_Before-1024x768.jpeg"
+                                            alt="Gillespie_Cravon_Before"
+                                            class="lazyload rounded-md shadow-md w-full h-auto object-cover cursor-zoom-in"
+                                            style="max-height: 250px;" data-index="1" />
+                                        <p class="text-center mt-2 text-gray-500">Before</p>
+                                    </div>
+                                    <div>
+                                        <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/10/Gillespie_Cravon_After-1024x768.jpeg"
+                                            alt="Gillespie_Cravon_After"
+                                            class="lazyload rounded-md shadow-md w-full h-auto object-cover cursor-zoom-in"
+                                            style="max-height: 250px;" data-index="2" />
+                                        <p class="text-center mt-2 text-gray-500">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
+                            <div class="w-2/3 justify-self-center md:justify-self-start">
+                                <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/10/Ellis_Jacquelyn-225x300.jpeg"
+                                    alt="Ellis_Jacquelyn"
+                                    class="lazyload rounded-md shadow-md max-w-full h-auto mx-auto md:mx-0 cursor-zoom-in"
+                                    style="max-height: 300px; object-fit: cover;" data-index="3" />
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-xl font-semibold">- Ellis</p>
+                                <div class="mt-4 grid grid-cols-2 gap-4">
+                                    <div>
+                                        <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/10/Ellis_Jacquelyn_before-1024x769.jpeg"
+                                            alt="Ellis_Jacquelyn_before"
+                                            class="lazyload rounded-md shadow-md w-full h-auto object-cover cursor-zoom-in"
+                                            style="max-height: 250px;" data-index="4" />
+                                        <p class="text-center mt-2 text-gray-500">Before</p>
+                                    </div>
+                                    <div>
+                                        <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/10/Ellis_Jacquelyn_after-1024x768.jpeg"
+                                            alt="Ellis_Jacquelyn_after"
+                                            class="lazyload rounded-md shadow-md w-full h-auto object-cover cursor-zoom-in"
+                                            style="max-height: 250px;" data-index="5" />
+                                        <p class="text-center mt-2 text-gray-500">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+                            <div class="justify-self-center md:justify-self-start">
+                                <div class="relative w-48 h-64 md:w-60 md:h-80 rounded-md overflow-hidden shadow-md mx-auto md:mx-0 cursor-zoom-in"
+                                    data-index="6">
+                                    <img data-src="https://ladentalclinic.com/wp-content/uploads/2020/10/kimberly-smile-240x360_x1.5.jpg"
+                                        alt="Kimberly Smile"
+                                        class="lazyload absolute inset-0 w-full h-full object-cover"
+                                        style="object-position: top;" />
+                                    <div class="absolute inset-0 bg-black opacity-25"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-semibold">Kimberly</h4>
+                                <p class="mt-2">
+                                    “I feel a lot more confident when I speak to people. Especially
+                                    during interviews or just in general just having conversations.”
+                                </p>
+                                <div class="mt-4">
+                                    <a href="#watch-video" class="text-blue-500 hover:underline">Watch the Video
+                                        &gt;</a>
+                                </div>
+                                <div class="mt-4 grid grid-cols-2 gap-4">
+                                    <div>
+                                        <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/02/Kimberly-before.jpg"
+                                            alt="Kimberly Before"
+                                            class="lazyload rounded-md shadow-md w-full h-auto object-cover cursor-zoom-in"
+                                            style="max-height: 200px;" data-index="7" />
+                                        <p class="text-center mt-2 text-gray-500">Before</p>
+                                    </div>
+                                    <div>
+                                        <img data-src="https://ladentalclinic.com/wp-content/uploads/2021/02/kimberly-after.jpg"
+                                            alt="Kimberly After"
+                                            class="lazyload rounded-md shadow-md w-full h-auto object-cover cursor-zoom-in"
+                                            style="max-height: 200px;" data-index="8" />
+                                        <p class="text-center mt-2 text-gray-500">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4 flex justify-center"></div>
+                <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-2 z-10"></div>
+                <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-2 z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close-button">&times;</span>
+        <img id="modalImage" src="" alt="Enlarged Image">
+    </div>
+    <section class="py-10">
+        <div class="container mx-auto">
+            <div class="swiper image-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/kim-youtube-thumbnail-224x126_x1.5.jpg"
+                            alt="Image 1" data-index="0" class="cursor-zoom-in">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/kelly-youtube-thumbnail-224x126_x1.5.jpg"
+                            alt="Image 2" data-index="1" class="cursor-zoom-in">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/anujin-youtube-thumbnail-224x126_x1.5.jpg"
+                            alt="Image 3" data-index="2" class="cursor-zoom-in">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/moss-youtube-thumbnail-224x126_x1.5.jpg"
+                            alt="Image 4" data-index="3" class="cursor-zoom-in">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/alee-a-youtube-thumbnail-224x126_x1.5.jpg"
+                            alt="Image 5" data-index="4" class="cursor-zoom-in">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://ladentalclinic.com/wp-content/uploads/2023/02/Screen-Shot-2021-05-12-at-12.54.23-PM.png"
+                            alt="Image 6" data-index="5" class="cursor-zoom-in">
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev text-blue-500"></div>
+                <div class="swiper-button-next text-blue-500"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-12 md:py-16 lg:py-20 w-full">
+        <div class="container mx-auto text-center">
+            <div class="mb-6">
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-700">
+                    Schedule your consultation today in person or online. Change how you feel about your smile forever.
+                </p>
+            </div>
+            <div class="flex justify-center gap-4">
+                <div class="hidden md:block">
+                    <a href="#"
+                        class="inline-block bg-white text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white font-semibold text-lg py-3 px-6 rounded-full transition duration-300"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ladental/invisalign-virtual-consultation'});return false;">
+                        Book Your Free 15-minute Consultation
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="#form"
+                        class="inline-block bg-blue-500 text-white font-semibold text-lg py-3 px-6 rounded-full transition duration-300">
+                        Book Your Free 15-minute Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <div class="text-center">
+                <img src="https://ladentalclinic.com/wp-content/uploads/2020/03/dr-arezoo-nasiry-e1618266986327.jpg"
+                    alt="Dr. Arezoo Nasiry" class="rounded-full shadow-md w-48 h-48 object-cover mx-auto" />
+                <p class="mt-4 text-lg font-semibold text-gray-800">Dr. Arezoo Nasiry</p>
+            </div>
+            <div class="text-center">
+                <img src="https://ladentalclinic.com/wp-content/uploads/2020/04/dr-azy-nasiry-e1618266967675.jpg"
+                    alt="Dr. Azy Nasiry" class="rounded-full shadow-md w-48 h-48 object-cover mx-auto" />
+                <p class="mt-4 text-lg font-semibold text-gray-800">Dr. Azy Nasiry</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold text-blue-500 mb-4">Your Invisalign Providers at LA Dental Clinic</h3>
+                <div class="text-lg text-gray-700">
+                    Known for their expert skills and gentle, caring approach, Dr. Azy and Dr. Arezoo Nasiry are the
+                    sister duo behind LA Dental Clinic. Bringing over 30 years of combined dental expertise to Los
+                    Angeles, they’re dentists, they’re entrepreneurs, and they’re leaders in both patient care and in
+                    empowering the next generation of dentists through their unique support programs for aspiring
+                    dentists and women in the dental industry.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-blue-500 py-16 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Ready To Join The Perfect Smiles Club?</h2>
+            <div class="mt-6">
+                <a href="#form" target="_blank"
+                    class="inline-block bg-white text-blue-500 font-semibold text-lg xl:text-xl py-4 px-8 rounded-full hover:bg-blue-100 transition duration-300">
+                    GET STARTED
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4"><b>Got Questions? Check FAQ’s Below -</b></h2>
+            <div class="border-b border-gray-300 mb-6"></div>
+
+            <div class="space-y-4">
+                <div class="bg-white rounded-md shadow-sm overflow-hidden">
+                    <button
+                        class="flex items-center justify-between w-full py-3 px-4 font-semibold text-gray-700 hover:bg-gray-50 focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-content-1"
+                        onclick="toggleAccordion(this, 'faq-content-1')">
+                        What's included in the price?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"
+                            class="w-5 h-5 text-gray-500 transform transition-transform">
+                            <g opacity="0.6">
+                                <circle cx="10" cy="10" r="9.5" stroke="#494949" />
+                                <path d="M6 10H13.5" stroke="#494949" />
+                                <path d="M9.75 13.75V6.25" stroke="#494949" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div id="faq-content-1" class="py-3 px-4 text-gray-600 hidden">
+                        <p>This is an all-inclusive price for the complete Invisalign treatment. It includes X-rays,
+                            photos, scans, impressions, Invisalign trays and any refinements, all Invisalign
+                            appointments, one set of aligners.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm overflow-hidden">
+                    <button
+                        class="flex items-center justify-between w-full py-3 px-4 font-semibold text-gray-700 hover:bg-gray-50 focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-content-2"
+                        onclick="toggleAccordion(this, 'faq-content-2')">
+                        What payment methods do you accept?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"
+                            class="w-5 h-5 text-gray-500 transform transition-transform">
+                            <g opacity="0.6">
+                                <circle cx="10" cy="10" r="9.5" stroke="#494949" />
+                                <path d="M6 10H13.5" stroke="#494949" />
+                                <path d="M9.75 13.75V6.25" stroke="#494949" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div id="faq-content-2" class="py-3 px-4 text-gray-600 hidden">
+                        <p>We will accept VISA, MasterCard, Amex for online payments, and third-party financing. If you
+                            are paying at our clinic, then you can pay using credit card or cash.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm overflow-hidden">
+                    <button
+                        class="flex items-center justify-between w-full py-3 px-4 font-semibold text-gray-700 hover:bg-gray-50 focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-content-3"
+                        onclick="toggleAccordion(this, 'faq-content-3')">
+                        When will I need to make my first payment?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"
+                            class="w-5 h-5 text-gray-500 transform transition-transform">
+                            <g opacity="0.6">
+                                <circle cx="10" cy="10" r="9.5" stroke="#494949" />
+                                <path d="M6 10H13.5" stroke="#494949" />
+                                <path d="M9.75 13.75V6.25" stroke="#494949" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div id="faq-content-3" class="py-3 px-4 text-gray-600 hidden">
+                        <p>To get the coupon discount, you will need to pay during your first visit and within 2 weeks
+                            from the date of your first consultation.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm overflow-hidden">
+                    <button
+                        class="flex items-center justify-between w-full py-3 px-4 font-semibold text-gray-700 hover:bg-gray-50 focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-content-4"
+                        onclick="toggleAccordion(this, 'faq-content-4')">
+                        How will I receive the coupon?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"
+                            class="w-5 h-5 text-gray-500 transform transition-transform">
+                            <g opacity="0.6">
+                                <circle cx="10" cy="10" r="9.5" stroke="#494949" />
+                                <path d="M6 10H13.5" stroke="#494949" />
+                                <path d="M9.75 13.75V6.25" stroke="#494949" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div id="faq-content-4" class="py-3 px-4 text-gray-600 hidden">
+                        <p>If it’s your first time consulting us about Invisalign, you will receive your coupon in our
+                            office or by email when you sign up for a virtual consultation.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-md shadow-sm overflow-hidden">
+                    <button
+                        class="flex items-center justify-between w-full py-3 px-4 font-semibold text-gray-700 hover:bg-gray-50 focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-content-5"
+                        onclick="toggleAccordion(this, 'faq-content-5')">
+                        What makes this the BEST deal?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"
+                            class="w-5 h-5 text-gray-500 transform transition-transform">
+                            <g opacity="0.6">
+                                <circle cx="10" cy="10" r="9.5" stroke="#494949" />
+                                <path d="M6 10H13.5" stroke="#494949" />
+                                <path d="M9.75 13.75V6.25" stroke="#494949" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div id="faq-content-5" class="py-3 px-4 text-gray-600 hidden">
+                        <p>Most dental offices charge $5,500+ for full Invisalign treatment. Go ahead and ask. At
+                            $4,400, we are offering the lowest price for Invisalign treatment. Add a discount coupon on
+                            top of that, and you got yourself the BEST, most unmissable deal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleAccordion(button, contentId) {
+                const content = document.getElementById(contentId);
+                const svg = button.querySelector('svg');
+                const isExpanded = button.getAttribute('aria-expanded') === 'true' || false;
+
+                button.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('hidden');
+                svg.classList.toggle('transform');
+                svg.classList.toggle('rotate-90'); // Optional: Rotate the icon
+            }
+        </script>
+    </section>
+    <section class="bg-gray-100 py-10 text-center">
+        <div class="container mx-auto">
+            <h4 class="text-xl font-semibold text-gray-700 mb-4">Didn’t find the answers you were looking for?</h4>
+            <div class="mt-4">
+                <a href="tel:2133859710"
+                    class="inline-block bg-blue-500 text-white font-semibold text-sm py-3 px-6 rounded-full hover:bg-blue-600 transition duration-300">
+                    Call us at 213-385-9710
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.image-swiper', {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+                1280: {
+                    slidesPerView: 1,
+                    spaceBetween: 60,
+                },
+            },
+        });
+
+        const lazyLoadImages = document.querySelectorAll('.lazyload');
+        lazyLoadImages.forEach((img) => {
+            img.src = img.dataset.src;
+            img.addEventListener('click', openModal);
+        });
+
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeButton = document.querySelector('.close-button');
+        let allImages = document.querySelectorAll('.lazyload');
+
+        function openModal(event) {
+            modal.style.display = 'flex';
+            modalImage.src = event.target.src;
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            modalImage.src = '';
+        }
+
+        closeButton.addEventListener('click', closeModal);
+        modal.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    <!-- Connect Section -->
+    <section class="bg-gray-50 py-12 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col md:flex-row gap-8">
+            <!-- Address Column -->
+            <div class="w-full md:w-1/2">
+                <div class="prose">
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                    <div class="w-full md:w-1/2">
+                        <div class="prose">
+                            <p><strong>LA Dental Clinic</strong></p>
+                            <p>3377 Wilshire Blvd #202</p>
+                            <p>Los Angeles, CA, 90010</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <a href="tel:213-385-9710" class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-phone mr-2 w-4 text-center"></i>
+                                    <span>213.385.9710</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="mailto:smile@ladentalclinic.com"
+                                    class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-envelope mr-2 w-4 text-center"></i>
+                                    <span>smile@ladentalclinic.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social & Payment Column -->
+            <div class="w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2">
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/LosAngelesDental" target="_blank"
+                                class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-blue-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCDp-9fJL4vjh6a1bIyQ9Cqw" target="_blank"
+                                class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-700">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/la_dental/" target="_blank"
+                                class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <form name="PrePage" method="post"
+                            action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                            <input type="hidden" name="LinkId" value="dcf1a658-065f-48ba-a25a-d65eef2040d2">
+                            <button type="submit"
+                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                Make A Payment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white w-full">
+
+        <!-- Footer Bottom -->
+        <section class="border-t border-gray-200 py-8 px-4 md:px-0">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-sm text-gray-600 mb-4 md:mb-0">
+                        © 2025 LA Dental Clinic. All Rights Reserved
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="/privacy-policy/" class="text-blue-600 hover:underline text-sm">Privacy Policy</a>
+                        <a href="https://www.elementiq.com/" target="_blank" rel="nofollow"
+                            class="text-blue-600 hover:underline text-sm">
+                            Internet Marketing by ElementIQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="./assets/scripts/tailwind.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/swiper.js"></script>
+</body>
+
+</html>

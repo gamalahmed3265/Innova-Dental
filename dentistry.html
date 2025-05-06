@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Dentist | Cosmetic, Implant & Family Dentistry | LA Dental Clinic</title>
+    <meta name="description"
+        content="Los Angeles Cosmetic Dentist - Expert Dentist! 35 Years of Experience. LA Dental provides the highest quality dental care in a State of the Art Office.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="bg-[#f5f5f5] font-cairo">
+    <!-- start header -->
+    <!-- start header -->
+    <header class="sticky bg-white z-50 left-0 top-0 w-full shadow">
+        <nav class="container px-6">
+            <div class="flex items-center justify-between text-white">
+                <a href="">
+                    <img src=" ./assets/clear-logo-2.png" class=" h-20" alt="">
+                </a>
+
+                <div class="flex flex-col text-[#3e3c3f] bold md:flex-row items-center gap-4">
+                    <div class="flex items-center justify-between gap-4">
+                        <a href="https://ladentalclinic.com/emergency/">Emergency Info</a>
+
+                        <a href="tel:213-385-9710">
+                            <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-phone-square"></i> </span>
+                            <span class="elementor-icon-list-text">
+                                213.385.9710</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between gap-4">
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://mychart.myoryx.com/patient/#/auth/onlineschedule?realm=ladental&amp;univers=com"
+                            target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book An Appointment</span>
+                            </span>
+                        </a>
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://calendly.com/ladental" target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book A Virtual Consultation</span>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <button id="mobile-menu-button"
+                    class="flex items-center md:hidden px-3 py-2 border rounded text-gray-900">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <ul id="mobile-menu" class="hidden md:flex text-[#3e3c3f]  uppercase text-xs justify-center items-center">
+                <!-- {/* Dentistry */} -->
+                <li class="relative">
+                    <a href="/dentistry.html"
+                        class="flex items-center px-4 py-3 hover:bg-[#3e3c3f] hover:text-white transition-all duration-700 ">
+                        <span class="font-medium">Dentistry</span>
+                    </a>
+                </li>
+
+                <!-- {/* Invisalign */} -->
+                <li class=" relative">
+                    <a href="/invisalign.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Invisalign</span>
+                    </a>
+                </li>
+
+                <!-- {/* Dental Implants */} -->
+                <li class=" relative">
+                    <a href="dental-implants.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Dental Implants</span>
+                    </a>
+                </li>
+
+                <!-- {/* Veneers */} -->
+                <li class=" relative">
+                    <a href="veneers.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Veneers</span>
+                    </a>
+                </li>
+
+                <!-- {/* Wisdom Teeth (with dropdown) */} -->
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <a href="wisdom-tooth.html" class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">Wisdom Teeth</span>
+
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </a>
+                    <ul
+                        class="absolute left-0 text-[#3e3c3f] mt-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        <li>
+                            <a href="/book-wisdom-tooth-woes" class="block px-4 py-2 hover:bg-gray-100">
+                                Books
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- {/* Smile Sisters Podcast */} -->
+                <!-- <li class=" relative">
+                    <a href="/smile-sisters-podcast"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">Smile Sisters Podcast</span>
+                    </a>
+                </li> -->
+
+                <!-- {/* About Us (with dropdown) */} -->
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <div class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">About Us</span>
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </div>
+                    <ul
+                        class="absolute left-0 mt-0 w-48 text-[#3e3c3f] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        <li>
+                            <a href="/about-staff.html" class="block px-4 py-2 hover:bg-gray-100">
+                                Staff
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/reviews" class="block px-4 py-2 hover:bg-gray-100">
+                                Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="block px-4 py-2 hover:bg-gray-100">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class=" relative">
+                    <a href="blogs.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">blogs</span>
+                    </a>
+                </li>
+                <!-- {/* FYI (with mega dropdown) */} -->
+                <!-- <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <div class="flex items-center px-4 py-3 cursor-pointer">
+                        <span class="font-medium mr-1">FYI</span>
+                        <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
+                    </div>
+                    <div
+                        class="absolute right-0 mt-0 w-96 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-100 p-4 grid grid-cols-2 gap-4">
+                        <div>
+                            <a href="/new-patients-info" class="block px-4 py-2 hover:bg-gray-100">
+                                New Patients
+                            </a>
+                            <a href="https://mychart.myoryx.com/patient/#/home?realm=ladental"
+                                class="block px-4 py-2 hover:bg-gray-100">
+                                Assess Your Oral Health
+                            </a>
+                            <a href="https://mychart.myoryx.com/patient/#/home?realm=ladental"
+                                class="block px-4 py-2 hover:bg-gray-100">
+                                Patient Forms
+                            </a>
+                            <a href="/dental-insurance" class="block px-4 py-2 hover:bg-gray-100">
+                                Insurance
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/blog" class="block px-4 py-2 hover:bg-gray-100">
+                                Blog
+                            </a>
+                            <a href="/covid-19-update" class="block px-4 py-2 hover:bg-gray-100">
+                                COVID-19
+                            </a>
+
+                            <div class="group/sub relative">
+                                <div class="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                    <span class="mr-1">Common Dental Problems</span>
+                                    <i class="fa-solid fa-caret-up h-4 w-4"></i>
+                                </div>
+                                <ul
+                                    class="absolute right-full top-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible ml-1">
+                                    <li>
+                                        <a href="/common-dental-problems/missing-teeth"
+                                            class="block px-4 py-2 hover:bg-gray-100">
+                                            Missing Teeth
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/common-dental-problems/broken-teeth"
+                                            class="block px-4 py-2 hover:bg-gray-100">
+                                            Broken Teeth
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- Main Container -->
+    <section class="max-w-7xl bg-[#0069D1] !text-white mx-auto px-4 py-12">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Dentists in Los Angeles, CA</h1>
+            <p class="text-lg  max-w-2xl mx-auto">
+                LA Dental Clinic’s experienced and knowledgeable staff provide quality dental care.
+                Schedule a consultation and let us put a smile on your face.
+            </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Service Column 1 -->
+            <div class="space-y-6">
+                <!-- Service Item 1 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="mt-1 text-white group-hover:text-white-800 transition-colors">
+                        <i class="fas fa-tooth text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">
+                            <a href="#cleaning" class="hover:text-white-600">Checkups & Cleaning</a>
+                        </h3>
+                        <p class="text-white">Regular dental cleanings and comprehensive checkups to maintain
+                            optimal oral health.</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="mt-1 text-blue-600 group-hover:text-blue-800 transition-colors">
+                        <i class="fas fa-tooth text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">
+                            <a href="#cosmetic" class="hover:text-white-600">Cosmetic Corrections</a>
+                        </h3>
+                        <p class="text-white">Enhance your smile with professional cosmetic dentistry solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Column 2 -->
+            <div class="space-y-6">
+                <!-- Service Item 3 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="mt-1 text-white group-hover:text-white-800 transition-colors">
+                        <i class="fas fa-tooth text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">
+                            <a href="#broken-missing" class="hover:text-white-600">Broken & Missing Teeth</a>
+                        </h3>
+                        <p class="text-white">Restorative solutions for damaged or missing teeth to restore
+                            function and appearance.</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="flex items-start space-x-4 group">
+                    <div class="mt-1 text-white group-hover:text-blue-800 transition-colors">
+                        <i class="fas fa-tooth text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">
+                            <a href="#mouth-pain" class="hover:text-blue-600">Mouth Pain</a>
+                        </h3>
+                        <p class="text-white">Expert diagnosis and treatment for dental pain and discomfort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-12">
+            <a href="https://mychart.myoryx.com/online-schedule/index.html?realm=ladental&amp;univers=com"
+                target="_blank" rel="noopener"
+                class="inline-block bg-white hover:bg-white-700 text-[#0069D1] px-8 py-3 rounded-md transition-colors">
+                Schedule A Consultation >
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap gap-4 py-3 overflow-x-auto scrollbar-hide">
+
+                <!-- Dental Implants -->
+                <a href="https://ladentalclinic.com/restorative-dentistry/dental-implants/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Dental Implants
+                </a>
+
+                <!-- All-on-4 Implants -->
+                <a href="https://ladentalclinic.com/restorative-dentistry/full-arch-restoration/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    All-on-4 Implants
+                </a>
+
+                <!-- Dentures -->
+                <a href="https://ladentalclinic.com/dentures/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Dentures
+                </a>
+
+                <!-- Bridges -->
+                <a href="https://ladentalclinic.com/restorative-dentistry/fixed-bridges/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Bridges
+                </a>
+
+                <!-- Fillings -->
+                <a href="https://ladentalclinic.com/restorative-dentistry/fillings/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Fillings
+                </a>
+
+                <!-- Crowns -->
+                <a href="https://ladentalclinic.com/restorative-dentistry/crowns/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Crowns
+                </a>
+
+                <!-- Invisalign -->
+                <a href="https://ladentalclinic.com/orthodontics/invisalign/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Invisalign
+                </a>
+
+                <!-- Braces -->
+                <a href="https://ladentalclinic.com/orthodontics/braces/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Braces
+                </a>
+
+                <!-- Gum Surgery -->
+                <a href="https://ladentalclinic.com/oral-surgery/gum-surgery/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Gum Surgery
+                </a>
+
+                <!-- Wisdom Teeth Removal -->
+                <a href="https://ladentalclinic.com/oral-surgery/wisdom-tooth-extractions/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Wisdom Teeth Removal
+                </a>
+
+                <!-- Root Canals -->
+                <a href="https://ladentalclinic.com/general-dentistry/root-canals/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Root Canals
+                </a>
+
+                <!-- Bone Grafting -->
+                <a href="https://ladentalclinic.com/oral-surgery/bone-grafting/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Bone Grafting
+                </a>
+
+                <!-- Cleaning -->
+                <a href="https://ladentalclinic.com/general-dentistry/regular-dental-cleanings/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Cleaning
+                </a>
+
+                <!-- Deep Cleaning -->
+                <a href="https://ladentalclinic.com/general-dentistry/deep-cleaning/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Deep Cleaning
+                </a>
+
+                <!-- CT Scans -->
+                <a href="https://ladentalclinic.com/general-dentistry/ct-scan/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    CT Scans
+                </a>
+
+                <!-- Veneers -->
+                <a href="https://ladentalclinic.com/cosmetic-dentistry/veneers/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Veneers
+                </a>
+
+                <!-- Bonding -->
+                <a href="https://ladentalclinic.com/cosmetic-dentistry/dental-bonding/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Bonding
+                </a>
+
+                <!-- Whitening -->
+                <a href="https://ladentalclinic.com/cosmetic-dentistry/zoom-whitening/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Whitening
+                </a>
+
+                <!-- Smile Makeover -->
+                <a href="/smile-makeover/"
+                    class="text-sm text-gray-700 hover:text-blue-500 hover:underline whitespace-nowrap">
+                    Smile Makeover
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <section id="cosmetic" class="py-16 bg-white">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap items-center">
+                <!-- Left Column: Cosmetic Services List -->
+                <div class="w-full md:w-1/2 p-4">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h6 class="text-lg font-semibold mb-4">Popular solutions for cosmetic flaws</h6>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://ladentalclinic.com/cosmetic-dentistry/veneers/"
+                                    class="flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    <span>Veneers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/cosmetic-dentistry/dental-bonding/"
+                                    class="flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    <span>Bonding</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/cosmetic-dentistry/zoom-whitening/"
+                                    class="flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    <span>Whitening</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/smile-makeover/" class="flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    <span>Smile Makeover</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Icon Box -->
+                <div class="w-full md:w-1/2 p-4">
+                    <div class="flex items-start space-x-4">
+                        <!-- Icon -->
+                        <div class="text-teal-500 mt-1">
+                            <i class="fas fa-tooth text-5xl"></i> <!-- Replaced SVG with Font Awesome -->
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">Cosmetic Corrections</h2>
+                            <p class="text-gray-700">
+                                A gap here. A chip there. Or a stain that you just can’t get rid of. When you’re
+                                dreaming of a flawless, red-carpet-ready smile, those little imperfections feel
+                                anything
+                                but minor. Cosmetic dentistry makes those flaws vanish, leaving you with a
+                                head-turning
+                                smile that’s ready for the spotlight.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap md:flex-row-reverse">
+                <!-- Left Column - Services List -->
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h6 class="text-sm font-semibold text-gray-700 mb-4">Common solutions for mouth pain</h6>
+
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/gum-surgery/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Gum Surgery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/wisdom-tooth-extractions/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Wisdom Tooth Extraction</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/root-canals/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Root Canals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/bone-grafting/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Bone Grafting</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column - Info Box -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex items-start">
+                        <!-- Font Awesome Icon -->
+                        <div class="mr-4">
+                            <i class="fas fa-grimace text-blue-500 text-2xl"></i>
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Mouth Pain</h2>
+                            <p class="text-gray-700">
+                                When you’re dealing with an infection, exposed nerve, or impacted teeth,
+                                you need a real solution, not just temporary relief - and that’s exactly
+                                what you’ll get at LA Dental Clinic thanks to our advanced equipment
+                                and years of experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap md:flex-row-reverse">
+                <!-- Left Column - Services List -->
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h6 class="text-sm font-semibold text-gray-700 mb-4">Common solutions for mouth pain</h6>
+
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/gum-surgery/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Gum Surgery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/wisdom-tooth-extractions/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Wisdom Tooth Extraction</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/root-canals/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Root Canals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/bone-grafting/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Bone Grafting</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column - Info Box -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex items-start">
+                        <!-- Custom SVG Icon -->
+                        <div class="mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                class="text-blue-500">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M17.7412 18.5751C17.5843 18.732 17.4961 18.9448 17.4961 19.1667C17.4961 19.3887 17.5843 19.6015 17.7412 19.7584C17.8981 19.9153 18.1109 20.0035 18.3328 20.0035C18.5548 20.0035 18.7676 19.9153 18.9245 19.7584L19.1662 19.5084C19.3936 19.2999 19.691 19.1843 19.9995 19.1843C20.308 19.1843 20.6054 19.2999 20.8328 19.5084C21.1245 19.8001 21.2828 20.0001 21.6662 20.0001C21.8317 20.001 21.9937 19.9527 22.1317 19.8612C22.2696 19.7697 22.3772 19.6392 22.4406 19.4863C22.5041 19.3334 22.5206 19.1651 22.4881 19.0028C22.4555 18.8406 22.3754 18.6916 22.2578 18.5751C21.9793 18.2482 21.6332 17.9856 21.2433 17.8055C20.8533 17.6255 20.429 17.5322 19.9995 17.5322C19.57 17.5322 19.1457 17.6255 18.7558 17.8055C18.3658 17.9856 18.0197 18.2482 17.7412 18.5751Z" />
+                                    <path
+                                        d="M27.7412 23.925L28.5745 24.7583C28.7314 24.9152 28.9443 25.0034 29.1662 25.0034C29.3881 25.0034 29.6009 24.9152 29.7578 24.7583C29.9148 24.6014 30.0029 24.3886 30.0029 24.1667C30.0029 23.9447 29.9148 23.7319 29.7578 23.575L29.5162 23.325C29.394 23.2019 29.2507 23.0976 29.092 23.0162C28.9333 22.9348 28.7616 22.8773 28.5843 22.8463C28.407 22.8153 28.2263 22.8112 28.0504 22.8342C27.8745 22.8571 27.7056 22.9067 27.5512 22.9805C27.3969 23.0544 27.2592 23.1513 27.1444 23.2663C27.0296 23.3813 26.9397 23.5125 26.879 23.6538C26.8183 23.7951 26.7876 23.944 26.7883 24.0937C26.789 24.2434 26.8211 24.3911 26.8827 24.5299C26.9443 24.6687 27.0343 24.7961 27.1475 24.9063L27.7412 23.925Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="40" height="40" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Mouth Pain</h2>
+                            <p class="text-gray-700">
+                                When you’re dealing with an infection, exposed nerve, or impacted teeth,
+                                you need a real solution, not just temporary relief - and that’s exactly
+                                what you’ll get at LA Dental Clinic thanks to our advanced equipment
+                                and years of experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap md:flex-row-reverse">
+                <!-- Left Column - Services List -->
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h6 class="text-sm font-semibold text-gray-700 mb-4">Common solutions for mouth pain</h6>
+
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/gum-surgery/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Gum Surgery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/wisdom-tooth-extractions/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Wisdom Tooth Extraction</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/root-canals/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Root Canals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/oral-surgery/bone-grafting/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Bone Grafting</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column - Info Box -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex items-start">
+                        <!-- Icon -->
+                        <div class="mr-4">
+                            <!-- Font Awesome Replacement for Dental Pain SVG -->
+                            <i class="fas fa-grimace text-blue-500 text-2xl"></i>
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Mouth Pain</h2>
+                            <p class="text-gray-700">
+                                When you’re dealing with an infection, exposed nerve, or impacted teeth,
+                                you need a real solution, not just temporary relief - and that’s exactly
+                                what you’ll get at LA Dental Clinic thanks to our advanced equipment
+                                and years of experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <!-- Left Column - Services List -->
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h6 class="text-sm font-semibold text-gray-700 mb-4">Popular scheduled checkups and cleaning
+                        </h6>
+
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/regular-dental-cleanings/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Cleaning</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/deep-cleaning/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Deep Cleaning</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/ct-scan/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>CT Scans</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ladentalclinic.com/general-dentistry/oral-cancer-screenings/"
+                                    class="flex items-center text-gray-700 hover:text-blue-500">
+                                    <i class="fas fa-chevron-right text-xs mr-3"></i>
+                                    <span>Oral Cancer Screening</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column - Info Box -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex items-start">
+                        <!-- Icon -->
+                        <div class="mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                class="text-blue-500">
+                                <!-- Simplified SVG path (use original SVG paths) -->
+                                <path
+                                    d="M20 5C12.8 5 7 10.8 7 18c0 5.2 3.1 9.7 7.7 11.8.1.1.3.1.4.2l2.1 1c.3.1.6.1.9-.1l2.1-2.1c.1-.1.3-.1.4-.1.6 0 1.2-.1 1.8-.2.3 0 .5-.3.5-.6v-1.5c0-.3-.3-.5-.6-.5-.1 0-.2 0-.3 0-4.4-.9-7.6-4.7-7.6-9.1 0-5.5 4.5-10 10-10s10 4.5 10 10c0 4.4-3.2 8.2-7.6 9.1-.1 0-.2 0-.3 0-.3 0-.5.3-.5.6v1.5c0 .3.3.5.6.5.1 0 .2 0 .3-.1l2.1-2.1c.3-.3.6-.3.9-.1l2.1 1c.1 0 .3.1.4.1 4.6-2.1 7.7-6.6 7.7-11.8 0-7.2-5.8-13-13-13z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Checkups & Cleaning</h2>
+                            <p class="text-gray-700">
+                                Every beautiful, healthy smile starts with the right oral care routine,
+                                and that means coming in every 6 months for checkups and cleaning. We take
+                                the time to be gentle and thorough, giving your smile the attention it needs
+                                to look and feel great.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dental-emergencies" class="py-12 bg-white">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap items-center">
+                <!-- Left Column: Contact Info -->
+                <div class="w-full md:w-1/2 p-4">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h6 class="text-lg font-semibold mb-4">If you think you're facing a dental emergency, call
+                            us
+                            anytime at:</h6>
+                        <ul class="mb-4">
+                            <li>
+                                <a href="tel:2133859710" class="flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    <span>Call (213) 385-9710</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-gray-600">
+                            *Pressing situations will be handled immediately by our dentists, while less urgent
+                            situations will be resolved the next day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Icon Box -->
+                <div class="w-full md:w-1/2 p-4">
+                    <div class="flex items-start space-x-4">
+                        <!-- Icon -->
+                        <div class="text-teal-500 mt-1">
+                            <i class="fas fa-tooth text-5xl"></i>
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h2 class="text-2xl font-bold mb-2">Dental Emergencies</h2>
+                            <p class="text-gray-700">
+                                In a dental emergency, every second matters. That’s why we do our best to prioritize
+                                emergency care and deliver fast, effective treatment that can be the difference
+                                between
+                                saving and losing teeth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-gray-50 py-12 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col md:flex-row gap-8">
+            <!-- Address Column -->
+            <div class="w-full md:w-1/2">
+                <div class="prose">
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                    <div class="w-full md:w-1/2">
+                        <div class="prose">
+                            <p><strong>LA Dental Clinic</strong></p>
+                            <p>3377 Wilshire Blvd #202</p>
+                            <p>Los Angeles, CA, 90010</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <a href="tel:213-385-9710" class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-phone mr-2 w-4 text-center"></i>
+                                    <span>213.385.9710</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="mailto:smile@ladentalclinic.com"
+                                    class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-envelope mr-2 w-4 text-center"></i>
+                                    <span>smile@ladentalclinic.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social & Payment Column -->
+            <div class="w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2">
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/LosAngelesDental" target="_blank"
+                                class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-blue-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCDp-9fJL4vjh6a1bIyQ9Cqw" target="_blank"
+                                class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-700">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/la_dental/" target="_blank"
+                                class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <form name="PrePage" method="post"
+                            action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                            <input type="hidden" name="LinkId" value="dcf1a658-065f-48ba-a25a-d65eef2040d2">
+                            <button type="submit"
+                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                Make A Payment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white w-full">
+
+        <!-- Footer Bottom -->
+        <section class="border-t border-gray-200 py-8 px-4 md:px-0">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-sm text-gray-600 mb-4 md:mb-0">
+                        © 2025 LA Dental Clinic. All Rights Reserved
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="/privacy-policy/" class="text-blue-600 hover:underline text-sm">Privacy Policy</a>
+                        <a href="https://www.elementiq.com/" target="_blank" rel="nofollow"
+                            class="text-blue-600 hover:underline text-sm">
+                            Internet Marketing by ElementIQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./assets/scripts/tailwind.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/swiper.js"></script>
+</body>
+
+</html>

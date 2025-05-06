@@ -20,78 +20,89 @@
 </head>
 
 <body class="bg-[#f5f5f5] font-cairo">
-    <header class="sticky z-50 left-0 top-0 bg-[#3e3c3f] w-full shadow">
-        <nav class="container mx-auto ">
-            <div class="flex items-center  justify-between text-white">
+    <!-- start header -->
+    <header class="sticky bg-white z-50 left-0 top-0 w-full shadow">
+        <nav class="container px-6">
+            <div class="flex items-center justify-between text-white">
                 <a href="">
-                    <img src=" ./assets/logo.jpg" class="w-20 h-20" alt="">
+                    <img src=" ./assets/clear-logo-2.png" class=" h-20" alt="">
                 </a>
-                <div class="hidden md:flex items-center  gap-4">
-                    <a href="https://ladentalclinic.com/emergency/">Emergency Info</a>
 
-                    <a href="tel:213-385-9710">
-                        <span class="elementor-icon-list-icon">
-                            <i aria-hidden="true" class="fas fa-phone-square"></i> </span>
-                        <span class="elementor-icon-list-text">
-                            213.385.9710</span>
-                    </a>
-                    <a class="elementor-button elementor-button-a elementor-size-sm"
-                        href="https://mychart.myoryx.com/patient/#/auth/onlineschedule?realm=ladental&amp;univers=com"
-                        target="_blank">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Book An Appointment</span>
-                        </span>
-                    </a>
-                    <a class="elementor-button elementor-button-a elementor-size-sm"
-                        href="https://calendly.com/ladental" target="_blank">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Book A Virtual Consultation</span>
-                        </span>
-                    </a>
+                <div class="flex flex-col text-[#3e3c3f] bold md:flex-row items-center gap-4">
+                    <div class="flex items-center justify-between gap-4">
+                        <a href="https://ladentalclinic.com/emergency/">Emergency Info</a>
+
+                        <a href="tel:213-385-9710">
+                            <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-phone-square"></i> </span>
+                            <span class="elementor-icon-list-text">
+                                213.385.9710</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between gap-4">
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://mychart.myoryx.com/patient/#/auth/onlineschedule?realm=ladental&amp;univers=com"
+                            target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book An Appointment</span>
+                            </span>
+                        </a>
+                        <a class="elementor-button elementor-button-a elementor-size-sm"
+                            href="https://calendly.com/ladental" target="_blank">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-text">Book A Virtual Consultation</span>
+                            </span>
+                        </a>
+
+                    </div>
                 </div>
+                <button id="mobile-menu-button"
+                    class="flex items-center md:hidden px-3 py-2 border rounded text-gray-900">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <ul class="hidden md:flex uppercase text-xs items-center justify-between text-white">
+            <ul id="mobile-menu" class="hidden md:flex text-[#3e3c3f]  uppercase text-xs justify-center items-center">
                 <!-- {/* Dentistry */} -->
                 <li class="relative">
-                    <a href="/dentistry"
-                        class="flex items-center px-4 py-3 hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700 ">
-                        <span class="font-medium  t">Dentistry</span>
+                    <a href="/dentistry.html"
+                        class="flex items-center px-4 py-3 hover:bg-[#3e3c3f] hover:text-white transition-all duration-700 ">
+                        <span class="font-medium">Dentistry</span>
                     </a>
                 </li>
 
                 <!-- {/* Invisalign */} -->
                 <li class=" relative">
-                    <a href="/invisalign"
-                        class="flex items-center px-4 py-3 hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
+                    <a href="/invisalign.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
                         <span class="font-medium">Invisalign</span>
                     </a>
                 </li>
 
                 <!-- {/* Dental Implants */} -->
                 <li class=" relative">
-                    <a href="/restorative-dentistry/dental-implants"
-                        class="flex items-center px-4 py-3 hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
+                    <a href="dental-implants.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
                         <span class="font-medium">Dental Implants</span>
                     </a>
                 </li>
 
                 <!-- {/* Veneers */} -->
                 <li class=" relative">
-                    <a href="/cosmetic-dentistry/veneers"
-                        class="flex items-center px-4 py-3 hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
+                    <a href="veneers.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
                         <span class="font-medium">Veneers</span>
                     </a>
                 </li>
 
                 <!-- {/* Wisdom Teeth (with dropdown) */} -->
-                <li class=" relative hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
-                    <div class="flex items-center px-4 py-3 cursor-pointer">
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                    <a href="wisdom-tooth.html" class="flex items-center px-4 py-3 cursor-pointer">
                         <span class="font-medium mr-1">Wisdom Teeth</span>
 
                         <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
-                    </div>
+                    </a>
                     <ul
-                        class="absolute left-0 mt-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        class="absolute left-0 text-[#3e3c3f] mt-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
                         <li>
                             <a href="/book-wisdom-tooth-woes" class="block px-4 py-2 hover:bg-gray-100">
                                 Books
@@ -101,23 +112,23 @@
                 </li>
 
                 <!-- {/* Smile Sisters Podcast */} -->
-                <li class=" relative">
+                <!-- <li class=" relative">
                     <a href="/smile-sisters-podcast"
-                        class="flex items-center px-4 py-3 hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
                         <span class="font-medium">Smile Sisters Podcast</span>
                     </a>
-                </li>
+                </li> -->
 
                 <!-- {/* About Us (with dropdown) */} -->
-                <li class=" relative hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
+                <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
                     <div class="flex items-center px-4 py-3 cursor-pointer">
                         <span class="font-medium mr-1">About Us</span>
                         <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
                     </div>
                     <ul
-                        class="absolute left-0 mt-0 w-48 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                        class="absolute left-0 mt-0 w-48 text-[#3e3c3f] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
                         <li>
-                            <a href="/staff" class="block px-4 py-2 hover:bg-gray-100">
+                            <a href="/about-staff.html" class="block px-4 py-2 hover:bg-gray-100">
                                 Staff
                             </a>
                         </li>
@@ -127,15 +138,21 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/contact" class="block px-4 py-2 hover:bg-gray-100">
+                            <a href="/contact.html" class="block px-4 py-2 hover:bg-gray-100">
                                 Contact
                             </a>
                         </li>
+
                     </ul>
                 </li>
-
+                <li class=" relative">
+                    <a href="blogs.html"
+                        class="flex items-center px-4 py-3  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
+                        <span class="font-medium">blogs</span>
+                    </a>
+                </li>
                 <!-- {/* FYI (with mega dropdown) */} -->
-                <li class="group relative hover:bg-gray-50 hover:text-[#3e3c3f] transition-all duration-700">
+                <!-- <li class="group relative  hover:bg-[#3e3c3f] hover:text-white  transition-all duration-700">
                     <div class="flex items-center px-4 py-3 cursor-pointer">
                         <span class="font-medium mr-1">FYI</span>
                         <i class="fa-solid fa-caret-down h-4 w-4 transition-transform group-hover:rotate-180"></i>
@@ -189,10 +206,12 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
+    <!-- end header -->
+    <!-- hero section -->
     <section class="relative min-h-screen overflow-hidden">
         <!-- Background Video -->
         <div class="absolute inset-0 z-0">
@@ -228,7 +247,9 @@
             </div>
         </div>
     </section>
-    <section class="px-6 md:px-24 lg:px-32 py-20">
+    <!-- end hero section -->
+    <!-- start Card -->
+    <section class="px-6 py-20">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
 
             <!-- Invisalign Card -->
@@ -295,7 +316,147 @@
 
         </div>
     </section>
-    <div class="space-y-8 px-6 md:px-24 lg:px-32 py-20">
+    <!-- end Card -->
+    <section class="px-4 py-12">
+        <div class="max-w-7xl mx-auto overflow-hidden">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    When you're happy and you know it, your smile will surely show it
+                </h2>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="mb-12">
+                <!-- Swiper Container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/kimberly-smile-240x360_x1.5-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="kimberly-smile" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/williams-scaled-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="williams" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/danelle-smile-240x360_x1.5-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="danelle-smile" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/denise-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="denise" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/Sana-scaled-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="Sana" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/patino-scaled-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="patino" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 7 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/anujin-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="anujin" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 8 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/alex-scaled-q23tfjad5285lj50mxhg21sbbahfghbevfejhcwu7k.jpg"
+                                    alt="alex" width="280" height="280">
+                            </figure>
+                        </div>
+
+                        <!-- Slide 9 -->
+                        <div class="swiper-slide">
+                            <figure class="p-2">
+                                <img class="w-full h-auto rounded-lg"
+                                    src="https://ladentalclinic.com/wp-content/uploads/elementor/thumbs/11764203_Gillespie_Cravon_Smile-q23tfheore5kyb7qxwo6x29e4iqp133y763kiszmk0.jpeg"
+                                    alt="Gillespie Cravon Smile" width="280" height="280">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center mb-12">
+                <a href="https://ladentalclinic.com/before-afters/" target="_blank"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded transition duration-300">
+                    Visit Our Smile Gallery &gt;
+                </a>
+            </div>
+
+            <!-- Reviews Section -->
+            <section class="bg-gray-50 rounded-lg p-6 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Google Review -->
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <img src="https://ladentalclinic.com/wp-content/uploads/2021/10/google-4.8-stars-89x54_x2.png"
+                                alt="Google 4.8 stars" class="mx-auto h-12 w-auto" width="178" height="108">
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900">4.8/5 with 200+ reviews</h3>
+                    </div>
+
+                    <!-- Yelp Review -->
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <img src="https://ladentalclinic.com/wp-content/uploads/2021/10/4-star-review-yelp-85x54_2x.png"
+                                alt="Yelp 4 stars" class="mx-auto h-12 w-auto" width="172" height="108">
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900">4/5 with 148+ reviews</h3>
+                    </div>
+
+                    <!-- Zocdoc Review -->
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <img src="https://ladentalclinic.com/wp-content/uploads/2021/10/zocdoc-5-stars-89x54_x2.png"
+                                alt="Zocdoc 5 stars" class="mx-auto h-12 w-auto" width="179" height="108">
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900">5/5 with 185+ reviews</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <div class="px-4 py-12 max-w-7xl mx-auto overflow-hidden">
         <div class="text-center">
             <h2 class="text-3xl font-bold">Your Friendly Dental Clinic In Los Angeles</h2>
             <h4 class="text-xl text-gray-600">Experienced And Personable Dental Service</h4>
@@ -390,123 +551,119 @@
             </div>
         </section>
     </div>
-    <section class="bg-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Service Is Our #1 Priority.</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    We want to ensure that your visit to the dentist is as pleasant as possible. LA Dental Clinic uses
-                    the most advanced and proven technology to help you maintain that beautiful smile and to ensure that
-                    your next visit is an enjoyable one!
+    <section class="bg-white py-12 px-4 max-w-7xl mx-auto overflow-hidden">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Service Is Our #1 Priority.</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                We want to ensure that your visit to the dentist is as pleasant as possible. LA Dental Clinic uses
+                the most advanced and proven technology to help you maintain that beautiful smile and to ensure that
+                your next visit is an enjoyable one!
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <!-- General Dentistry -->
+            <div class="text-center">
+                <a href="/general-dentistry/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-general-dentistry-e1553197622402.png"
+                        alt="General Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/general-dentistry/" class="hover:text-blue-500">General Dentistry</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/general-dentistry/">At LA Dental Clinic, we seek to cater to all of your dental needs.
+                        We provide dental services specialized to you.</a>
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                <!-- General Dentistry -->
-                <div class="text-center">
-                    <a href="/general-dentistry/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-general-dentistry-e1553197622402.png"
-                            alt="General Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/general-dentistry/" class="hover:text-blue-500">General Dentistry</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/general-dentistry/">At LA Dental Clinic, we seek to cater to all of your dental needs.
-                            We provide dental services specialized to you.</a>
-                    </p>
-                </div>
-
-                <!-- Cosmetic Dentistry -->
-                <div class="text-center">
-                    <a href="/cosmetic-dentistry/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-cosmetic-dentistry-e1553197590777.png"
-                            alt="Cosmetic Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/cosmetic-dentistry/" class="hover:text-blue-500">Cosmetic Dentistry</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/cosmetic-dentistry/">Everyone deserves a beautiful smile! Cosmetic dental treatments
-                            can dramatically improve yours. Start to smile with confidence!</a>
-                    </p>
-                </div>
-
-                <!-- Restorative Dentistry -->
-                <div class="text-center">
-                    <a href="/restorative-dentistry/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-restorative-dentistry-e1553197602347.png"
-                            alt="Restorative Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/restorative-dentistry/" class="hover:text-blue-500">Restorative Dentistry</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/restorative-dentistry/">We provide comprehensive treatments for restorative dental
-                            procedures. We perform implants and full dental reconstruction.</a>
-                    </p>
-                </div>
-
-                <!-- Orthodontics -->
-                <div class="text-center">
-                    <a href="/orthodontics/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-orthodontics-e1553197520149.png"
-                            alt="Orthodontics" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/orthodontics/" class="hover:text-blue-500">Orthodontics</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/orthodontics/">Orthodontic treatments are all designed to align the teeth and jaws. We
-                            can address all of your orthodontic needs.</a>
-                    </p>
-                </div>
+            <!-- Cosmetic Dentistry -->
+            <div class="text-center">
+                <a href="/cosmetic-dentistry/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-cosmetic-dentistry-e1553197590777.png"
+                        alt="Cosmetic Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/cosmetic-dentistry/" class="hover:text-blue-500">Cosmetic Dentistry</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/cosmetic-dentistry/">Everyone deserves a beautiful smile! Cosmetic dental treatments
+                        can dramatically improve yours. Start to smile with confidence!</a>
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Sedation Dentistry -->
-                <div class="text-center">
-                    <a href="/sedation-dentistry-services/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-sedation-dentistry-e1553197611364.png"
-                            alt="Sedation Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/sedation-dentistry-services/" class="hover:text-blue-500">Sedation Dentistry</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/sedation-dentistry-services/">Whether you are undergoing an extensive procedure or get
-                            anxiety at the dentist, sedation can help maximize personal comfort.</a>
-                    </p>
-                </div>
+            <!-- Restorative Dentistry -->
+            <div class="text-center">
+                <a href="/restorative-dentistry/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-restorative-dentistry-e1553197602347.png"
+                        alt="Restorative Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/restorative-dentistry/" class="hover:text-blue-500">Restorative Dentistry</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/restorative-dentistry/">We provide comprehensive treatments for restorative dental
+                        procedures. We perform implants and full dental reconstruction.</a>
+                </p>
+            </div>
 
-                <!-- Dental Implants -->
-                <div class="text-center">
-                    <a href="/dental-implants/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-dental-implants-e1553197506496.png"
-                            alt="Dental Implants" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/dental-implants/" class="hover:text-blue-500">Dental Implants</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/dental-implants/">If you have missing teeth or want to stabilize your dentures, dental
-                            implants are the closest things to permanent and natural teeth.</a>
-                    </p>
-                </div>
+            <!-- Orthodontics -->
+            <div class="text-center">
+                <a href="/orthodontics/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-orthodontics-e1553197520149.png"
+                        alt="Orthodontics" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/orthodontics/" class="hover:text-blue-500">Orthodontics</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/orthodontics/">Orthodontic treatments are all designed to align the teeth and jaws. We
+                        can address all of your orthodontic needs.</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Sedation Dentistry -->
+            <div class="text-center">
+                <a href="/sedation-dentistry-services/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-sedation-dentistry-e1553197611364.png"
+                        alt="Sedation Dentistry" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/sedation-dentistry-services/" class="hover:text-blue-500">Sedation Dentistry</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/sedation-dentistry-services/">Whether you are undergoing an extensive procedure or get
+                        anxiety at the dentist, sedation can help maximize personal comfort.</a>
+                </p>
+            </div>
 
-                <!-- Oral Surgery -->
-                <div class="text-center">
-                    <a href="/oral-surgery/">
-                        <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-oral-surgery-e1553200101910.png"
-                            alt="Oral Surgery" class="mx-auto mb-4 w-24 h-24 object-contain">
-                    </a>
-                    <h4 class="text-xl font-semibold mb-2">
-                        <a href="/oral-surgery/" class="hover:text-blue-500">Oral Surgery</a>
-                    </h4>
-                    <p class="text-gray-600">
-                        <a href="/oral-surgery/">We practice full scope oral surgery. If you need teeth...</a>
-                    </p>
-                </div>
+            <!-- Dental Implants -->
+            <div class="text-center">
+                <a href="/dental-implants/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-dental-implants-e1553197506496.png"
+                        alt="Dental Implants" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/dental-implants/" class="hover:text-blue-500">Dental Implants</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/dental-implants/">If you have missing teeth or want to stabilize your dentures, dental
+                        implants are the closest things to permanent and natural teeth.</a>
+                </p>
+            </div>
+
+            <!-- Oral Surgery -->
+            <div class="text-center">
+                <a href="/oral-surgery/">
+                    <img src="https://ladentalclinic.com/wp-content/uploads/2018/12/icon-oral-surgery-e1553200101910.png"
+                        alt="Oral Surgery" class="mx-auto mb-4 w-24 h-24 object-contain">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">
+                    <a href="/oral-surgery/" class="hover:text-blue-500">Oral Surgery</a>
+                </h4>
+                <p class="text-gray-600">
+                    <a href="/oral-surgery/">We practice full scope oral surgery. If you need teeth...</a>
+                </p>
             </div>
         </div>
     </section>
@@ -549,228 +706,201 @@
             </div>
         </div>
     </section>
-
-    <section id="start-with-us" class="py-20 px-6 md:px-12 bg-gray-100">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
-                ابدأ الآن
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="flex flex-col items-center text-center">
-                    <div class="bg-white p-6 rounded-full mb-6">
-                        <i class="fa-solid fa-star text-3xl text-black"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">سجِّل عبر الإنترنت </h3>
-                    <p class="text-gray-600">
-                        كل ما عليك هو إبلاغنا بالمدينة التي ترغب في القيادة فيها ونوع الرخصة التي تملكها. وسنرسل إليك
-                        رسالة إلكترونية بالخطوات التالية.
-
+    <section class="relative bg-white">
+        <div
+            class="py-20 flex flex-col w-full h-full justify-center items-center bg-[url(https://ladentalclinic.com/wp-content/uploads/2017/08/bg-famliy-dentistry.png)] bg-cover bg-center">
+            <!-- <img src="https://ladentalclinic.com/wp-content/uploads/2021/10/hero-bg.jpg" alt
+                class="bg-[url(https://ladentalclinic.com/wp-content/uploads/2021/10/hero-bg.jpg)] bg-cover bg-center h-96 rounded-lg shadow-lg relative overflow-hidden"> -->
+            <!-- Left Column (66% width) -->
+            <div class="flex flex-col md:flex-row items-center px-4">
+                <div class="">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        Find Your Perfect Smile!
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Click on the
+                        <a href="https://scheduling.simplifeye.co/#key=71wwAXx1P1jjH9GtWTNfXTV5wOta7mG&amp;gaID=null"
+                            target="_blank" rel="noopener"
+                            class="font-bold text-blue-600 hover:text-blue-800 transition-colors">
+                            Book My Appointment
+                        </a>
+                        button or call us at
+                        <a href="tel:2133859710" class="font-bold text-blue-600 hover:text-blue-800 transition-colors">
+                            213.385.9710
+                        </a>
+                        to book your appointment! If you have any questions about your initial appointment, call us
+                        or fill in the form below and we'll be sure to help you as soon as possible. We are always
+                        happy to answer your dental-related questions!
                     </p>
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <div class="bg-white p-6 rounded-full mb-6">
-                        <i class="fa-solid fa-calendar-days text-3xl text-black"></i>
+
+                    <div class="mt-8">
+                        <a href="https://mychart.myoryx.com/online-schedule/index.html?realm=ladental&amp;univers=com"
+                            target="_blank" rel="noopener"
+                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+                            Book My Appointment
+                        </a>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">تحقّق من متطلبات القيادة
-                    </h3>
-                    <p class="text-gray-600">
-                        جميع الأشخاص مؤهلون للقيادة مع أوبر. إليك ما تحتاج إلى معرفته إذا كنت تقود في القاهرة، أو
-                        الإسكندرية، أو المنصورة، أو الزقازيق، أو طنطا، أو دمنهور، أو الغردقة.
-
-                    </p>
                 </div>
-                <div class="flex flex-col items-center text-center">
-                    <div class="bg-white p-6 rounded-full mb-6">
-                        <i class="fa-regular fa-square-check text-3xl text-black"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="bg-blue-600  py-20 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <h3 class="text-5xl font-extrabold capitalize  text-white tracking-tight leading-tight drop-shadow-lg">
+                The Latest Dental Deals and Tips.
+            </h3>
+            <form class="flex gap-4 items-center w-full justify-between flex-col gap-4">
+                <div class="w-full">
+                    <label class="block text-sm font-medium text-white mb-1" for="input_1a">
+                        First Name<span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" name="input_1" placeholder="First Name"
+                        class="medium w-full px-3 py-2 border outline-none border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div class="w-full">
+                    <label class="block text-sm font-medium text-white mb-1" for="input_2">
+                        Email<span class="text-red-500">*</span>
+                    </label>
+                    <input type="email" placeholder="Email" name="input_2"
+                        class="medium w-full px-3 py-2 border outline-none border-gray-300 rounded-md shadow-sm">
+                </div>
+                <button type="submit"
+                    class="w-full text-blue-600  hover:bg-gray-200 bg-white font-bold py-2 px-3 rounded">
+                    I'm in!
+                </button>
+            </form>
+        </div>
+    </section>
 
+    <!-- Services & Hours Section -->
+    <section class="bg-white py-12 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col md:flex-row gap-8">
+            <!-- Services Column -->
+            <div class="w-full md:w-1/2">
+                <div class="prose">
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-2">
+                            <li><a href="/general-dentistry/" class="text-blue-600 hover:underline">General
+                                    Dentistry</a></li>
+                            <li><a href="/cosmetic-dentistry/" class="text-blue-600 hover:underline">Cosmetic
+                                    Dentistry</a></li>
+                            <li><a href="/restorative-dentistry/" class="text-blue-600 hover:underline">Restorative
+                                    Dentistry</a></li>
+                            <li><a href="/orthodontics/" class="text-blue-600 hover:underline">Orthodontics</a></li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">الحصول على سيارة
-                    </h3>
-                    <p class="text-gray-600">
-                        يمكنك التسجيل الآن حتى إن لم تمتلك سيارة تستوفي متطلبات السيارات في مصر في الوقت الحالي.
-
-                    </p>
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-2">
+                            <li><a href="/sedation-dentistry-services/" class="text-blue-600 hover:underline">Sedation
+                                    Dentistry</a></li>
+                            <li><a href="/restorative-dentistry/dental-implants/"
+                                    class="text-blue-600 hover:underline">Dental Implants</a></li>
+                            <li><a href="/oral-surgery/" class="text-blue-600 hover:underline">Oral Surgery</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
+            <!-- Hours Column -->
+            <div class="w-full md:w-1/2">
+                <div class="prose">
+                    <h4 class="text-lg font-bold mb-4">Hours</h4>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-2">
+                            <li><strong>MON:</strong> 9:00 AM – 6:00 PM</li>
+                            <li><strong>TUE:</strong> 9:00 AM – 6:00 PM</li>
+                            <li><strong>WED:</strong> 9:00 AM – 6:00 PM</li>
+                            <li><strong>THU:</strong> 9:00 AM – 6:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-2">
+                            <li><strong>FRI:</strong> 8:30 AM – 5:00 PM</li>
+                            <li><strong>SAT:</strong> Closed</li>
+                            <li><strong>SUN:</strong> Closed</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <footer class="bg-white w-full">
-        <!-- Newsletter Section -->
-        <section id="newsletter" class="bg-gray-100 py-12 px-4 md:px-0 w-full">
-            <div class="container mx-auto flex flex-col md:flex-row gap-8">
-                <div class="w-full md:w-1/2">
-                    <div class="prose">
-                        <h3 class="text-2xl font-bold">The latest dental deals and tips.</h3>
+    <!-- Connect Section -->
+    <section class="bg-gray-50 py-12 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col md:flex-row gap-8">
+            <!-- Address Column -->
+            <div class="w-full md:w-1/2">
+                <div class="prose">
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                    <div class="w-full md:w-1/2">
+                        <div class="prose">
+                            <p><strong>LA Dental Clinic</strong></p>
+                            <p>3377 Wilshire Blvd #202</p>
+                            <p>Los Angeles, CA, 90010</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <a href="tel:213-385-9710" class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-phone mr-2 w-4 text-center"></i>
+                                    <span>213.385.9710</span>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <a href="mailto:smile@ladentalclinic.com"
+                                    class="flex items-center text-blue-600 hover:underline">
+                                    <i class="fas fa-envelope mr-2 w-4 text-center"></i>
+                                    <span>smile@ladentalclinic.com</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <form class="gf_browser_unknown gform_wrapper" id="gform_16">
-                        <div class="gform-body">
-                            <ul class="gform_fields">
-                                <li class="gfield">
-                                    <label class="gfield_label block text-sm font-medium text-gray-700 mb-1"
-                                        for="input_16_1">
-                                        First Name<span class="text-red-500">*</span>
-                                    </label>
-                                    <div class="ginput_container">
-                                        <input type="text" name="input_1" id="input_16_1"
-                                            class="medium w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
-                                    </div>
-                                </li>
-                                <li class="gfield mt-4">
-                                    <label class="gfield_label block text-sm font-medium text-gray-700 mb-1"
-                                        for="input_16_2">
-                                        Email<span class="text-red-500">*</span>
-                                    </label>
-                                    <div class="ginput_container">
-                                        <input type="email" name="input_2" id="input_16_2"
-                                            class="medium w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
-                                    </div>
-                                </li>
-                            </ul>
+            </div>
+
+            <!-- Social & Payment Column -->
+            <div class="w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2">
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/LosAngelesDental" target="_blank"
+                                class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-blue-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCDp-9fJL4vjh6a1bIyQ9Cqw" target="_blank"
+                                class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-700">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/la_dental/" target="_blank"
+                                class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
-                        <div class="gform_footer mt-4">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <form name="PrePage" method="post"
+                            action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                            <input type="hidden" name="LinkId" value="dcf1a658-065f-48ba-a25a-d65eef2040d2">
                             <button type="submit"
-                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                I'm in!
+                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                Make A Payment
                             </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services & Hours Section -->
-        <section class="bg-white py-12 px-4 md:px-0">
-            <div class="container mx-auto flex flex-col md:flex-row gap-8">
-                <!-- Services Column -->
-                <div class="w-full md:w-1/2">
-                    <div class="prose">
-                        <h4 class="text-lg font-bold mb-4">Our Services</h4>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-8 mt-4">
-                        <div class="w-full md:w-1/2">
-                            <ul class="space-y-2">
-                                <li><a href="/general-dentistry/" class="text-blue-600 hover:underline">General
-                                        Dentistry</a></li>
-                                <li><a href="/cosmetic-dentistry/" class="text-blue-600 hover:underline">Cosmetic
-                                        Dentistry</a></li>
-                                <li><a href="/restorative-dentistry/" class="text-blue-600 hover:underline">Restorative
-                                        Dentistry</a></li>
-                                <li><a href="/orthodontics/" class="text-blue-600 hover:underline">Orthodontics</a></li>
-                            </ul>
-                        </div>
-                        <div class="w-full md:w-1/2">
-                            <ul class="space-y-2">
-                                <li><a href="/sedation-dentistry-services/"
-                                        class="text-blue-600 hover:underline">Sedation Dentistry</a></li>
-                                <li><a href="/restorative-dentistry/dental-implants/"
-                                        class="text-blue-600 hover:underline">Dental Implants</a></li>
-                                <li><a href="/oral-surgery/" class="text-blue-600 hover:underline">Oral Surgery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hours Column -->
-                <div class="w-full md:w-1/2">
-                    <div class="prose">
-                        <h4 class="text-lg font-bold mb-4">Hours</h4>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-8 mt-4">
-                        <div class="w-full md:w-1/2">
-                            <ul class="space-y-2">
-                                <li><strong>MON:</strong> 9:00 AM – 6:00 PM</li>
-                                <li><strong>TUE:</strong> 9:00 AM – 6:00 PM</li>
-                                <li><strong>WED:</strong> 9:00 AM – 6:00 PM</li>
-                                <li><strong>THU:</strong> 9:00 AM – 6:00 PM</li>
-                            </ul>
-                        </div>
-                        <div class="w-full md:w-1/2">
-                            <ul class="space-y-2">
-                                <li><strong>FRI:</strong> 8:30 AM – 5:00 PM</li>
-                                <li><strong>SAT:</strong> Closed</li>
-                                <li><strong>SUN:</strong> Closed</li>
-                            </ul>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Connect Section -->
-        <section class="bg-gray-50 py-12 px-4 md:px-0">
-            <div class="container mx-auto flex flex-col md:flex-row gap-8">
-                <!-- Address Column -->
-                <div class="w-full md:w-1/2">
-                    <div class="prose">
-                        <h4 class="text-lg font-bold mb-4">Connect</h4>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-8 mt-4">
-                        <div class="w-full md:w-1/2">
-                            <div class="prose">
-                                <p><strong>LA Dental Clinic</strong></p>
-                                <p>3377 Wilshire Blvd #202</p>
-                                <p>Los Angeles, CA, 90010</p>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/2">
-                            <ul class="space-y-3">
-                                <li class="flex items-center">
-                                    <a href="tel:213-385-9710" class="flex items-center text-blue-600 hover:underline">
-                                        <i class="fas fa-phone mr-2 w-4 text-center"></i>
-                                        <span>213.385.9710</span>
-                                    </a>
-                                </li>
-                                <li class="flex items-center">
-                                    <a href="mailto:smile@ladentalclinic.com"
-                                        class="flex items-center text-blue-600 hover:underline">
-                                        <i class="fas fa-envelope mr-2 w-4 text-center"></i>
-                                        <span>smile@ladentalclinic.com</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Social & Payment Column -->
-                <div class="w-full md:w-1/2">
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="w-full md:w-1/2">
-                            <div class="flex space-x-4">
-                                <a href="https://www.facebook.com/LosAngelesDental" target="_blank"
-                                    class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-blue-700">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCDp-9fJL4vjh6a1bIyQ9Cqw" target="_blank"
-                                    class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-700">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                                <a href="https://www.instagram.com/la_dental/" target="_blank"
-                                    class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-pink-700">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/2">
-                            <form name="PrePage" method="post"
-                                action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
-                                <input type="hidden" name="LinkId" value="dcf1a658-065f-48ba-a25a-d65eef2040d2">
-                                <button type="submit"
-                                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                    Make A Payment
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
+    <footer class="bg-white w-full">
 
         <!-- Footer Bottom -->
         <section class="border-t border-gray-200 py-8 px-4 md:px-0">
@@ -791,6 +921,8 @@
         </section>
     </footer>
     <script src="./assets/scripts/tailwind.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/swiper.js"></script>
 </body>
 
 </html>
